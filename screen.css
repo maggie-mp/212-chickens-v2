@@ -67,11 +67,13 @@ a {
 
 
 #menu {
-  /*background-color: white;
-  /*background-image: url(menu-bg.svg);*/
-  background-size: 46px;
- /* border-bottom: #2A8 10px solid;
-  border-top: #2A8 4px solid;*/
+  background-color: firebrick;
+  background-image: url(barn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid firebrick;
+  background-image: barn.jpeg;
+  border-radius: 100px;
   display: grid;
   margin: auto;
   max-width: 1140px;
@@ -79,7 +81,6 @@ a {
   margin-bottom: 5.5em;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  /*border-bottom: darkgreen 10px solid;*/
 }
 
 /*
