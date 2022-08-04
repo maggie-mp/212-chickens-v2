@@ -82,6 +82,8 @@ a {
   /*border-bottom: darkgreen 10px solid;*/
 }
 
+/*
+
 #egg {
    width: 250px;
    display: block;
@@ -89,7 +91,26 @@ a {
   margin-right: auto;
   width: 60%;
   padding-top: 1em;
+} */
+
+
+/*test code*/
+
+.egg{
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
 }
+
+.text {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 
 #footer {
