@@ -5,6 +5,7 @@
 
 /* outlines for testing */
 
+
 div {
   outline: 1px rgba(255,0,0,0.1) solid;
 }
@@ -22,7 +23,7 @@ body {
   color: #F5C403;
   /*stroke: #575654;*/
   font-family: 'Fredoka One', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h1 {
@@ -50,17 +51,19 @@ a {
 }
 
 #header {
-  background-color: #3C7A31;
- /* background-image: url(checks.svg), url(checks.svg);
-  background-position: top, bottom;
-  background-repeat: repeat-x;
-  background-size: 35px; */
+  background-color: #3C7A31;  
+  background-image: url(grass_2.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; 
   border-bottom: white 10px solid;
   margin-bottom: 40px;
-  /*padding-top: 30px;*/
+  padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
 }
+
+
 
 #menu {
   background-color: white;
@@ -76,6 +79,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
+
 
 #footer {
   color: white;
