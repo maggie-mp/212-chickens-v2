@@ -1,13 +1,13 @@
 /* google font import */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka+One&family=Uchen&display=swap');
 
 /* outlines for testing */
 
-/*div {
+div {
   outline: 1px rgba(255,0,0,0.1) solid;
-}*/
+}
 
 /* tag selectors */
 
@@ -18,8 +18,11 @@ body {
   margin: 0;
 }
 
-h3 {
+#welcome {
   color: #F5C403;
+  /*stroke: #575654;*/
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
 }
 
 h1 {
@@ -43,7 +46,7 @@ a {
 
 #logo {
   padding-left: 25px;
-  width: 320px;
+  width: 500px;
 }
 
 #header {
@@ -54,8 +57,8 @@ a {
   background-size: 35px; */
   border-bottom: white 10px solid;
   margin-bottom: 40px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  /*padding-top: 30px;*/
+  padding-bottom: 20px;
   text-align: center;
 }
 
