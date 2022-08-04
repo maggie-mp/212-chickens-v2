@@ -76,11 +76,23 @@ a {
   border-radius: 100px;
   display: grid;
   margin: auto;
-  max-width: 1140px;
-  padding: 20px 0;
+  max-width: 1180px;
+  padding: 20px 20px;
   margin-bottom: 5.5em;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+}
+
+#menu p {
+  padding: 0.5em;
+  text-align: center;
+  color: white;
+}
+
+
+#menu img {
+  max-width: 90%;
+  padding: 1em;
 }
 
 /*
