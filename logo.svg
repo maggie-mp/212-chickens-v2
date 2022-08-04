@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 708.66 498.9" style="enable-background:new 0 0 708.66 498.9;" xml:space="preserve">
+	 viewBox="0 0 515.86 363.16" style="enable-background:new 0 0 515.86 363.16;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#ED1C24;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#ED1C24;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
@@ -12,17 +12,17 @@
 </style>
 <g>
 	<g>
-		<path class="st0" d="M300.02,207.99c-6.7-34.98-54.41-51.12-98.72-19.47s-59.85,42.19-59.85,42.19s66.35,6.14,70.63,21.44
+		<path class="st0" d="M203.62,140.12c-6.7-34.98-54.41-51.12-98.72-19.47s-59.85,42.19-59.85,42.19s66.35,6.14,70.63,21.44
 			c14.86,53.19-31.99,105.27,0,121.04c34,16.77,33.44-37.92,33.44-37.92s0.09,34.99,27.29,30.93c27.21-4.06,24.03-45.14,24.03-45.14
-			s16.39,22.46,66.14,5c0,0-41.86-24.07-52.98-54.26C304.46,256.71,303.06,223.84,300.02,207.99z"/>
-		<path class="st1" d="M254.83,171.78c0,0,16.92-23.8,0.23-40.97s-57.03-7.2-48.54,25.49c0,0-18.58-6.09-24.95,7.2
+			s16.39,22.46,66.14,5c0,0-41.86-24.07-52.98-54.26C208.05,188.84,206.66,155.97,203.62,140.12z"/>
+		<path class="st1" d="M158.42,103.91c0,0,16.92-23.8,0.23-40.97s-57.03-7.2-48.54,25.49c0,0-18.58-6.09-24.95,7.2
 			c-6.37,13.3,9.98,31.98,9.98,31.98"/>
-		<ellipse cx="226.95" cy="215.86" rx="14.86" ry="15.51"/>
-		<ellipse class="st2" cx="222.32" cy="210.56" rx="5.07" ry="5.29"/>
-		<path class="st1" d="M303.15,235.85c0,0-13.64,17.66-33.87,18.57"/>
-		<path class="st0" d="M193.96,240.44c0,0-16.6,33.69-11.66,50.48c4.45,15.12,27.11,21.78,27.11,21.78"/>
+		<ellipse cx="130.54" cy="147.99" rx="14.86" ry="15.51"/>
+		<ellipse class="st2" cx="125.92" cy="142.7" rx="5.07" ry="5.29"/>
+		<path class="st1" d="M206.74,167.98c0,0-13.64,17.66-33.87,18.57"/>
+		<path class="st0" d="M97.56,172.58c0,0-16.6,33.69-11.66,50.48c4.45,15.12,27.11,21.78,27.11,21.78"/>
 	</g>
-	<rect x="340.54" y="176.07" class="st3" width="226.67" height="119.56"/>
-	<text transform="matrix(1 0 0 1 340.5392 228.5627)"><tspan x="0" y="0" class="st2 st4 st5">Chicken  </tspan><tspan x="0" y="60" class="st2 st4 st5">Picker</tspan></text>
+	<rect x="244.14" y="108.2" class="st3" width="226.67" height="119.56"/>
+	<text transform="matrix(1 0 0 1 244.1378 160.6961)"><tspan x="0" y="0" class="st2 st4 st5">Chicken  </tspan><tspan x="0" y="60" class="st2 st4 st5">Picker</tspan></text>
 </g>
 </svg>
