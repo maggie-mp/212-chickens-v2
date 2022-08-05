@@ -16,9 +16,9 @@
   <body>
 
     <div id="header">
-      <a href="index.html"> <img src = "logo.svg" id="logo" /> </a>
+      <a href="index.html"> <img src="{{ url_for('static', filename='logo.svg') }}" id="logo" /> </a>
       <br>
-      <img src="chicken_drawing.png" id="drawing" />
+      <img src="{{ url_for('static', filename='chicken_drawing.png') }}" id="drawing" />
       <p id = "welcome">
         Thinking about buying chickens for pets? They’re very friendly! <br>
         How about getting some fresh eggs from your own backyard? <br><br>
@@ -26,10 +26,13 @@
 
       <p>
         <br>
-        <a class="btn-yellow" href="questions.html">Start the Quiz!</a>
+       <!-- <a class="btn-yellow" href="questions.html">Start the Quiz!</a>-->
+         <a class="btn-yellow" href="{{ url_for('order') }}">Start the Quiz!</a>
       </p>
 
     </div>
+
+    <!--
 
         <div id="menu">
 
@@ -45,6 +48,8 @@
      </div>
 
      </div>
+
+   -->
 
     
     <div id="footer">
