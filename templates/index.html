@@ -31,12 +31,27 @@
 
     </div>
 
+        <div id="menu">
+
+      <h1>Menu</h1>
+
+      <div>
+        <h2>Burgers</h2>
+        <ol class="menu-items">
+          {% for burger in burgers %}
+          <li>{{ burger[0] }} <span class="price">{{burger[1]}}</span></li>
+          {% endfor %}
+        </ol>
+     </div>
+
+     </div>
+
     
     <div id="footer">
       {{ disclaimer | upper }}
     </div>
 
-    <!--CONTROL STRUCTURES: https://github.com/tabreturn/tutorial-212-burgers/blob/master/notes/lesson_02/notes.md --->
+    <!--LINK AND STATIC FILES: https://github.com/tabreturn/tutorial-212-burgers/blob/master/notes/lesson_02/notes.md --->
 
   </body>
 
