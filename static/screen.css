@@ -129,9 +129,10 @@ a {
 #footer {
   color: white;
   font-size: 0.8em;
-  opacity: 0.4;
+  opacity: 0.5;
   text-align: center;
   background-color: darkgreen;
+  padding: 1em;
 }
 
 /* class selector (multiple instances) */

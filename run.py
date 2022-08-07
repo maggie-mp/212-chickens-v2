@@ -8,10 +8,11 @@ burgers = [
  ['Double Burger', '$6.99']
 ]
 
+
 @app.route('/')
 def index():
     return render_template('index.html',
-                            disclaimer='This website is for folks living in Aotearoa, New Zealand.',
+                            disclaimer='This website is for folks living in Aotearoa, New Zealand | Designed and Coded by Maggie McMillan-Perry',
                             burgers=burgers)
 
 @app.route('/questions')
