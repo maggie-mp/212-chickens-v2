@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 
 <html>
 
@@ -18,53 +18,101 @@
     <div id="header">
      <a href="/"> <img src="{{ url_for('static', filename='logo.svg') }}" id="logo" /> </a>
     </div>
-  
-
-      <div id="menu">
-
-      <h1>Question 1: </h1> 
-      <h1>How big is your backyard?</h1> 
-
-      <div class="egg">
-        <!--<img src="egg.png" width="50%">-->
-        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
-        <div class= "text">Hello Test</div>
-      </div>
-
-      <div class="egg">
-        <!--<img src="egg.png" width="50%">-->
-        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
-        <div class= "text">Hello Test</div>
-      </div>
-
-      <div class="egg">
-        <!--<img src="egg.png" width="50%">-->
-        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
-        <div class= "text">Hello Test</div>
-      </div>
-
-
-    </div>
+    </body>
+    </html>-->
 
     {% extends "base.html" %}
 
-{% block title %}Questions - 212-chickens-v2{% endblock %}
+    {% block title %}Chicken Picker Quiz{% endblock %}
 
-{% block head %}
-    {{ super() }}
-    <style>
-      body {
-        background-color: green;
-      }
-    </style>
-{% endblock %}
+    {% block content %}
+        <body>
 
-{% block content %}
-    <div id="header">
-      <h1>Order now</h1>
-      <p>PLACE YOUR ORDER</p>
+        <div id="header">
+          <a href="/"> <img src="{{ url_for('static', filename='logo.svg') }}" id="logo" /> </a>
+          <br>
+
+
+  <!--questions layout-->
+
+      <div id="menu">
+
+      <h1>Question 1:</h1> 
+      <h1>How big is your backyard?</h1> 
+
+    
+<!--  <div class="egg">
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+        <div class= "text">Hello Test</div>
+      </div>
+
+      <div class="egg">
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+        <div class= "text">Hello Test</div>
+      </div>
+
+  <div class="egg">
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+        <div class= "text">Hello Test</div>
+      </div>-->
+
+
+
+<!--test egg question-->
+
+  <!--answer #1-->
+      <div class="egg">
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+        <div class= "text">
+          {% for answer in answers %} 
+          {{ answer[0] }}
+          {% endfor %}
+        </div>
+      </div>
+
+
+  <!--answer #2-->
+      <div class="egg">
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+        <div class= "text">
+          {% for answer in answers %} 
+          {{ answer[0] }}
+          {% endfor %}
+        </div>
+      </div>
+
+
+  <!--answer #3-->
+      <div class="egg">
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+        <div class= "text">
+          {% for answer in answers %} 
+          {{ answer[0] }}
+          {% endfor %}
+        </div>
+      </div>
+
+         <!--<div>
+        <h2>Burgers</h2>
+        <ol class="menu-items">
+          {% for burger in burgers %}
+          <li>{{ burger[0] }} <span class="price">{{ burger[1] }}</span></li>
+          {% endfor %}
+        </ol>
+      </div>-->
+
+
     </div>
-{% endblock %}
+
+  {% endblock %}
+
+<!--footer-->
+
+    {% block footer %}
+    <div id="footer">
+      {{ disclaimer|upper }}
+    </div>
+    {% endblock %}
 
   </body>
 
