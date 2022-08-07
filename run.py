@@ -15,5 +15,5 @@ def index():
                             burgers=burgers)
 
 @app.route('/questions')
-def order():    
+def questions():    
     return render_template('questions.html')    
