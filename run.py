@@ -13,3 +13,7 @@ def index():
     return render_template('index.html',
                             disclaimer='may contain traces of nuts',
                             burgers=burgers)
+
+@app.route('/questions')
+def order():    
+    return render_template('questions.html')    

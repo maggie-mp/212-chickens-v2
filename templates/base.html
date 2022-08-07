@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="Find the best backyard chicken for you!" />
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.png')}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
+    {% endblock %}
+  </head>
+
+  <body>
+
+    {% block content %} blah blah {% endblock %}
+
+    {% block footer %}
+    <div id="footer">
+      {{ disclaimer|upper }}
+    </div>
+    {% endblock %}
+
+  </body>
+
+</html>

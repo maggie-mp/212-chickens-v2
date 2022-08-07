@@ -26,22 +26,45 @@
       <h1>How big is your backyard?</h1> 
 
       <div class="egg">
-        <img src="egg.png" width="50%">
+        <!--<img src="egg.png" width="50%">-->
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">Hello Test</div>
       </div>
 
       <div class="egg">
-        <img src="egg.png" width="50%">
+        <!--<img src="egg.png" width="50%">-->
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">Hello Test</div>
       </div>
 
       <div class="egg">
-        <img src="egg.png" width="50%">
+        <!--<img src="egg.png" width="50%">-->
+        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">Hello Test</div>
       </div>
 
 
     </div>
+
+    {% extends "base.html" %}
+
+{% block title %}Questions - 212-chickens-v2{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <style>
+      body {
+        background-color: #DFE;
+      }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div id="header">
+      <h1>Order now</h1>
+      <p>PLACE YOUR ORDER</p>
+    </div>
+{% endblock %}
 
   </body>
 
