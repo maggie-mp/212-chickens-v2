@@ -11,7 +11,7 @@ burgers = [
 @app.route('/')
 def index():
     return render_template('index.html',
-                            disclaimer='may contain traces of nuts',
+                            disclaimer='This website is for folks living in Aotearoa, New Zealand.',
                             burgers=burgers)
 
 @app.route('/questions')
