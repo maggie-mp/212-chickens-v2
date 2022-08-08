@@ -3,11 +3,12 @@ app = Flask(__name__)
 
 
 questions = [
- ['Hello Question'],
+ ['Question 1:'],
+ ['q2'],
 ]
 
 answers = [
- ['Hello Person'],
+ ['pin', 'answ2', 'answ3'],
 ]
 
 @app.route('/')

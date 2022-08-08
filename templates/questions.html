@@ -65,7 +65,7 @@
         <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">
           {% for answer in answers %} 
-          {{ answer[0] }}
+          {{ answer[0][0] }}
           {% endfor %}
         </div>
       </div>
@@ -76,7 +76,7 @@
         <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">
           {% for answer in answers %} 
-          {{ answer[0] }}
+          {{ answer[0][1] }}
           {% endfor %}
         </div>
       </div>
@@ -87,7 +87,7 @@
         <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">
           {% for answer in answers %} 
-          {{ answer[0] }}
+          {{ answer[0][2] }}
           {% endfor %}
         </div>
       </div>
