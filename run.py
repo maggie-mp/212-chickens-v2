@@ -3,8 +3,7 @@ app = Flask(__name__)
 
 
 questions = [
- ['Question 1:'],
- ['q2'],
+ ['Question 1:','Question 2:'],
 ]
 
 answers = [
