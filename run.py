@@ -3,11 +3,11 @@ app = Flask(__name__)
 
 
 questions = [
- ['Question 1:','Question 2:'],
+ ['Question 1:'],
 ]
 
 answers = [
- ['pin', 'answ2', 'answ3'],
+[['Rarely', 'Summer & Spring', 'All Year Round']]
 ]
 
 @app.route('/')
