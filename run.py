@@ -30,3 +30,9 @@ def questions():
                             disclaimer='This website is for folks living in Aotearoa, New Zealand | Designed and Coded by Maggie McMillan-Perry',
                             questionss=questionss,
                             answers=answers)    
+
+@app.route('/results')
+def results():    
+    return render_template('results.html',
+                            disclaimer='This website is for folks living in Aotearoa, New Zealand | Designed and Coded by Maggie McMillan-Perry',
+                            )    

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 
 <html>
 
@@ -15,10 +15,24 @@
 
   <body>
 
-    <div id="header">
-     <a href="/"> <img src = "logo.svg" id="logo" /> </a>
-    </div>
+  </body>
 
+</html>-->
+
+     {% extends "base.html" %}
+
+    {% block title %}Chicken Picker Quiz{% endblock %}
+
+    {% block content %}
+        <body>
+
+        <div id="header">
+          <a href="/"> <img src="{{ url_for('static', filename='logo.svg') }}" id="logo" /> </a>
+          <br>
+
+
+  <!--questions layout-->
+    
 
       <div id="menu">
 
@@ -44,7 +58,5 @@
 
 
     </div>
-
-  </body>
-
-</html>
+{% endblock %}
+  
