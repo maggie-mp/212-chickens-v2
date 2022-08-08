@@ -37,9 +37,23 @@
 
       <div id="menu">
 
-     <h1>Question 1:</h1> 
-      <h1>How big is your backyard?</h1> 
+    
+    <!--question-->
 
+      {% for question in questionss %}
+       <h1>{{ question[0] }}</h1>
+       <h1>{{question[1]}}</h1>
+       {% endfor %}
+
+
+     <!--<h1>Question 1:</h1> 
+      <h1>How big is your backyard?</h1> -->
+      <!--<div>
+      <h1>{% for question in questions %} 
+          {{ question[0][1] }}
+          {% endfor %}</h1> 
+      <h1>How big is your backyard?</h1> 
+      </div>-->
      
 
     
@@ -111,6 +125,8 @@
 <!--footer-->
 
     {% block footer %}
+
+  </div><br>
     <div id="footer">
       {{ disclaimer|upper }}
     </div>
