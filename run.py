@@ -14,7 +14,7 @@ answers = [
 def index():
     return render_template('index.html',
                             disclaimer='This website is for folks living in Aotearoa, New Zealand | Designed and Coded by Maggie McMillan-Perry',
-                            burgers=burgers)
+                            answers=answers)
 
 @app.route('/questions')
 def questions():    
