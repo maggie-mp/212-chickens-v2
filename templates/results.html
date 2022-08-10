@@ -39,5 +39,27 @@
 
 
     </div>
+
+
+    <div id="menu">
+      <h1>= All Chickens = </h1> 
+
+      <div>
+        <h2>Red Shavers</h2>
+          <img src="{{ url_for('static', filename='leghorn.png') }}"/>
+          {% for chicken in chickens %}
+          <li class="attributes">
+            <ul><span style="color: yellow;">Name:</span> {{ chicken[0] }} </ul>
+            <ul>Type: {{chicken[1]}}</ul>
+            <ul>Friendliness: {{chicken[3]}}</ul>
+            <ul>Climate Preferrance: {{chicken[4]}}</ul>
+            <ul>Backyard Preferrance: {{chicken[5]}}</ul>
+          </li>
+          {% endfor %}
+     </div>
+
+    
+
+    </div>
 {% endblock %}
   

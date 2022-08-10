@@ -1,6 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, g
+import sqlite3
+
 app = Flask(__name__)
 
+MENUDB = 'chickens.db'
+
+chickens = [
+['Red Shavers','Heavy Breed','All Year Round', 'Friendly', 'Not Fussy', 'Small'],
+]
 
 questionss = [
  ['Question 1:', 'How often do you want your chickens to lay?'],
@@ -32,7 +39,16 @@ def questions():
                             answers=answers)    
 
 @app.route('/results')
-def results():    
+def results():  
+    db = sqlite3.connect(MENUDB)
+    print(db)
+
+    cur = db.execute('SELECT chicken,mass,egg,friendly,climate,backyard FROM chickens')
+    for row in cur:
+        print(row)
+    db.close()
+
     return render_template('results.html',
                             disclaimer='This website is for folks living in Aotearoa, New Zealand | Designed and Coded by Maggie McMillan-Perry',
+                            chickens=chickens
                             )    

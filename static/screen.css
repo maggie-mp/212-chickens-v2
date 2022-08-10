@@ -95,6 +95,13 @@ a {
   padding: 1em;
 }
 
+#menu li {
+  list-style: none;
+  color: white;
+  line-height: 90%;
+  align-content: left;
+}
+
 /*
 
 #egg {
