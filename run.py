@@ -15,10 +15,10 @@ answers = [
 #[['Light Breed', 'Medium Breed', 'Heavy Breed']],
 #[['Friendly', 'Child Friendly']],
 #[['Small', 'Medium', 'Large']],
-#[['It's very dry, 'It gets rain/snow often', 'Neither']],
+#[['It's very dry/hot, 'It gets rain/cold often', 'Neither']],
 ]
 
-@app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html',
                             disclaimer='This website is for folks living in Aotearoa, New Zealand | Designed and Coded by Maggie McMillan-Perry',
