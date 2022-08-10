@@ -12,7 +12,7 @@
           <br>
 
 
-  <!--questions layout-->
+  <!--results layout-->
     
 
       <div id="menu">
@@ -40,25 +40,26 @@
 
     </div>
 
+     <!--all the other chickens layout-->
+
 
     <div id="menu">
       <h1>= All Chickens = </h1> 
-
+ {% for chicken in chickens %}
       <div>
-        <h2>Red Shavers</h2>
-          <img src="{{ url_for('static', filename='leghorn.png') }}"/>
-          {% for chicken in chickens %}
-          <li class="attributes">
-            <ul><span style="color: yellow;">Name:</span> {{ chicken[0] }} </ul>
-            <ul>Type: {{chicken[1]}}</ul>
-            <ul>Friendliness: {{chicken[3]}}</ul>
-            <ul>Climate Preferrance: {{chicken[4]}}</ul>
-            <ul>Backyard Preferrance: {{chicken[5]}}</ul>
+          <!--<img src="{{ url_for('static', filename='leghorn.png') }}"/>-->
+         
+          <li>
+            <ul><span style="color: #F5C403;">Name:</span> {{ chicken[0] }}</ul>
+            <ul><span style="color: #F5C403;">Type:</span> {{chicken[1]}}</ul>
+            <ul><span style="color: #F5C403;">Friendliness:</span> {{chicken[3]}}</ul>
+            <ul><span style="color: #F5C403;">Climate Preferrance:</span> {{chicken[4]}}</ul>
+            <ul><span style="color: #F5C403;">Backyard Preferrance:</span> {{chicken[5]}}</ul>
           </li>
-          {% endfor %}
+          
      </div>
 
-    
+    {% endfor %}
 
     </div>
 {% endblock %}

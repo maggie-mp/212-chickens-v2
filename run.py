@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 MENUDB = 'chickens.db'
 
-chickens = [
-['Red Shavers','Heavy Breed','All Year Round', 'Friendly', 'Not Fussy', 'Small'],
-]
+#chickens = [
+#['Red Shavers','Heavy Breed','All Year Round', 'Friendly', 'Not Fussy', 'Small'],
+#]
 
 questionss = [
  ['Question 1:', 'How often do you want your chickens to lay?'],
@@ -43,9 +43,10 @@ def results():
     db = sqlite3.connect(MENUDB)
     print(db)
 
+    chickens = []
     cur = db.execute('SELECT chicken,mass,egg,friendly,climate,backyard FROM chickens')
     for row in cur:
-        print(row)
+        chickens.append(list(row))
     db.close()
 
     return render_template('results.html',

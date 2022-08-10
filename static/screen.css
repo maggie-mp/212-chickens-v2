@@ -95,12 +95,6 @@ a {
   padding: 1em;
 }
 
-#menu li {
-  list-style: none;
-  color: white;
-  line-height: 90%;
-  align-content: left;
-}
 
 /*
 
@@ -171,14 +165,22 @@ a {
 
 /* descendant selectors */
 
+#menu li {
+  list-style: none;
+  color: white;
+  line-height: 90%;
+  width: 90%;
+  padding: 3em;
+}
+
 #menu div {
   grid-column: span 3;
   margin: 0 1em;
 }
 
 #menu div:nth-child(3) {
-  border-bottom: 3px solid #2A8;
-  border-top: 3px solid #2A8;
+  border-bottom: 3px solid goldenrod;
+  border-top: 3px solid goldenrod;
 }
 
 #menu h1 {
@@ -192,17 +194,13 @@ a {
   text-align: center;
 }
 
-#menu ol,
+
 #menu ul {
-  padding-left: 2em;
+  float: left;
 }
 
-#menu li {
-  margin-top: 0.4em;
-  width: 100%;
-}
 
-#menu .price {
+/*#menu .price {
   float: right;
   padding-right: 1em;
 }
