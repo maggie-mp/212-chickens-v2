@@ -26,6 +26,7 @@ def index():
     db.close()
     
     return render_template('index.html')
+    
 
     # return redirect(url_for('questions'))
 
