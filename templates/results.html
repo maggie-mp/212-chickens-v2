@@ -20,7 +20,30 @@
       <h1>= Results = </h1> 
 
       <div>
-        <h2>Chicken #1</h2>
+    <h3>Details</h3>
+    {% for key in details %}
+    <p><strong>{{ key }}:</strong><br />{{ details[key] }}</p>
+    {% endfor %}
+  </div>
+
+  <div>
+    <h3>Items</h3>
+    {% for item in items %}
+    {{ items[item] }} &times; {{ item }}<br />
+    {% endfor %}
+  </div>
+
+  <p>&nbsp;</p>
+  <p>
+    <em>You can expect your delivery to arrive in about 35 minutes. <br />Thanks for ordering from 212 Burgers!</em>
+  </p>
+ 
+
+</div>
+
+
+    </div>
+       <!-- <h2>Chicken #1</h2>
           <img src="leghorn.png">
           <p>Nulla dui nisi, mattis vel scelerisque ac, laoreet quis arcu. Mauris non elit nunc. Aliquam dapibus elit non purus cursus, nec placerat sem rutrum. Morbi at venenatis magna.</p>
       </div>
@@ -36,7 +59,7 @@
           <img src="silke.jpeg">
           <p>Nulla dui nisi, mattis vel scelerisque ac, laoreet quis arcu. Mauris non elit nunc. Aliquam dapibus elit non purus cursus, nec placerat sem rutrum. Morbi at venenatis magna.</p>
       </div>
-    </div>
+    </div>-->
 
 
 

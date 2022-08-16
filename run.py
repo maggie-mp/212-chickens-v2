@@ -52,6 +52,17 @@ def egg():
 def results():  
     db = sqlite3.connect(MENUDB)
     print(db)
+    print(request.form)
+
+    details = {}
+    items = {}
+
+    for input in request.form:
+        if input == '{{answers[current_question]}':
+            details[input] = request.form[input]
+        elif request.form[input] and request.form[input] != '0':
+            items[input] = request.form[input]
+
 
     chickens = []
     cur = db.execute('SELECT chicken,mass,egg,friendly,climate,backyard FROM chickens')
@@ -59,7 +70,7 @@ def results():
         chickens.append(list(row))
     db.close()
 
-    return render_template('results.html',
+    return render_template('results.html', details=details, items=items,
                             disclaimer='This website is for folks living in Aotearoa, New Zealand | Designed and Coded by Maggie McMillan-Perry',
                             chickens=chickens
-                            )    
+                            )   
