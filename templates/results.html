@@ -19,6 +19,28 @@
 
       <h1>= Results = </h1> 
 
+      <div>
+    <h3>Details</h3>
+    {% for key in details %}
+    <p><strong>{{ key }}:</strong><br />{{ details[key] }}</p>
+    {% endfor %}
+  </div>
+
+  <div>
+    <h3>Items</h3>
+    {% for item in items %}
+    {{ items[item] }} &times; {{ item }}<br />
+    {% endfor %}
+  </div>
+
+  <p>&nbsp;</p>
+  <p>
+    <em>You can expect your delivery to arrive in about 35 minutes. <br />Thanks for ordering from 212 Burgers!</em>
+  </p>
+ 
+
+</div>
+
 
     </div>
        <!-- <h2>Chicken #1</h2>
@@ -47,7 +69,9 @@
     <div id="menu">
       <h1>= All the other Chickens = </h1> 
  {% for chicken in chickens %}
-      <div>      
+      <div>
+          <!--<img src="{{ url_for('static', filename='leghorn.png') }}"/>-->
+         
           <li>
             <ul><span style="color: #F5C403;">Name:</span> {{ chicken[0] }}</ul>
             <ul><span style="color: #F5C403;">Type:</span> {{chicken[1]}}</ul>
