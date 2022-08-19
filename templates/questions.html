@@ -63,19 +63,16 @@ answer #3
 
  <form action="/results" method="post">
 
-  <!--answer #1 (V.1)-->
-
+      
+<!--answer #1 (V.1)-->
   <a href="{{ url_for('egg') }}">
       <div class="egg">
         <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">
           {{answers[current_question][1]}}
-       </div>
+        </div>
       </div>
       </a>
-      
-
-
 
 
 <!--answer #2-->
@@ -100,8 +97,7 @@ answer #3
       </a>
 
     </div>
-
-  </form>
+</form>
 
   {% endblock %}
 
