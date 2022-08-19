@@ -42,12 +42,12 @@ def questions():
 
 @app.route('/egg', methods=['GET', 'POST'])
 def egg():
-    print(answer) 
     session['question'] += 1
     if session['question'] >= 5:
         return redirect(url_for('results'))
     else:
         return redirect(url_for('questions'))
+
 
 @app.route('/results')
 def results():  
@@ -59,7 +59,7 @@ def results():
     items = {}
 
     for input in request.form:
-        if input == '{{answers[current_question]}':
+        if input == '{{answers[current_question]}}':
             details[input] = request.form[input]
         elif request.form[input] and request.form[input] != '0':
             items[input] = request.form[input]
