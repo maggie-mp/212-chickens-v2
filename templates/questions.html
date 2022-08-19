@@ -24,9 +24,22 @@
 
 <!--test egg question-->
 
- <form action="/results" method="post">
+<!-- answer #1 -->
+<form action="/results" method="post">
+<input name="answer" type="hidden" value="1" />
+<input type="image" src="{{ url_for('static', filename='egg.png') }}" width="50%">
+</form>
 
-  <!--answer #1 (V.1)-->
+
+
+
+<!--ORIGIONAL CODE-->
+
+<!--
+
+ <form action="/results" method="post">-->
+
+  <!--answer #1 (V.1)
 
   <a href="{{ url_for('egg') }}">
       <div class="egg">
@@ -36,45 +49,45 @@
        </div>
       </div>
       </a>
-      
+      -->
 
 
 
 
-<!--answer #2-->
+<!--answer #2
   <a href="{{ url_for('egg') }}">
       <div class="egg">
         <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">
-          {{answers[current_question][2]}}
+          {{answers[current_question][2]}}-->
           <!--
           {% for answer in answers %} 
           {{ answer[0][0] }}
           {% endfor %}
-        -->
+        
         </div>
       </div>
-      </a>
+      </a>-->
 
 
-  <!--answer #3-->
+  <!--answer #3
   <a href="{{ url_for('egg') }}">
       <div class="egg">
         <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">
-          {{answers[current_question][3]}}
+          {{answers[current_question][3]}}-->
           <!--
           {% for answer in answers %} 
           {{ answer[0][0] }}
           {% endfor %}
         -->
-        </div>
+      <!--  </div>
       </div>
       </a>
 
     </div>
 
-  </form>
+  </form>-->
 
   {% endblock %}
 

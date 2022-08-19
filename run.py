@@ -42,6 +42,7 @@ def questions():
 
 @app.route('/egg', methods=['GET', 'POST'])
 def egg():
+    print(answer) 
     session['question'] += 1
     if session['question'] >= 5:
         return redirect(url_for('results'))
