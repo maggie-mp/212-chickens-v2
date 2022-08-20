@@ -40,6 +40,8 @@ def questions():
                             answers=session['answers_list'],
                             current_question=session['question'])    
 
+
+
 @app.route('/egg', methods=['GET', 'POST'])
 def egg():
 
@@ -49,11 +51,12 @@ def egg():
     else:
         return redirect(url_for('questions'))
 
+        print(answer)
   
-    db = sqlite3.connect(MENUDB)
-    print(db)
-    print(request.form)
-    return render_template('results.html')
+   # db = sqlite3.connect(MENUDB)
+   # print(db)
+    #print(request.form)
+   # return render_template('results.html')
 
   #  details = {}
   #  items = {}
