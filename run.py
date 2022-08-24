@@ -43,7 +43,7 @@ def questions():
 
 
 @app.route('/egg', methods=['GET', 'POST'])
-def egg(answer):
+def egg():
 
     session['question'] += 1
     if session['question'] >= 5:
@@ -53,6 +53,20 @@ def egg(answer):
 
         print(answer)
   
+   # db = sqlite3.connect(MENUDB)
+   # print(db)
+    #print(request.form)
+   # return render_template('results.html')
+
+  #  details = {}
+  #  items = {}
+
+  #  for input in request.form:
+   #     if input == '{{answers[current_question]}}':
+    #        details[input] = request.form[input]
+     #   elif request.form[input] and request.form[input] != '0':
+      #      items[input] = request.form[input]
+
 
 @app.route('/results')
 def results():  
@@ -64,23 +78,6 @@ def results():
     for row in cur:
         chickens.append(list(row))
     db.close()
-
-
-    db = sqlite3.connect(MENUDB)
-    print(db)
-    print(request.form)
-    return render_template('results.html')
-
-    details = {}
-    items = {}
-
-    for input in request.form:
-        if input == '{{answers[current_question]}}':
-            details[input] = request.form[input]
-        elif request.form[input] and request.form[input] != '0':
-           items[input] = request.form[input]
-
-
 
     return render_template('results.html', details=details, items=items,
                             disclaimer='This website is for folks living in Aotearoa, New Zealand | Designed and Coded by Maggie McMillan-Perry',

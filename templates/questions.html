@@ -26,64 +26,37 @@
 
 
 <!--submit button version-->
-<!-- answer #1 
+<!-- answer #1 -->
 <form action="/results" method="post">
-<input name="answer" type="hidden" value="1" name="{{answers[current_question][1]}}"/>
-<input type="image" src="{{ url_for('static', filename='egg.png') }}" width="50%" name="{{answers[current_question][1]}}" id="answer" >
-</form>-->
+<input name="answer" type="hidden" value="1" />
+<input type="image" src="{{ url_for('static', filename='egg.png') }}" width="50%" >
+</form>
 
-<!--answer #2 
+<!--answer #2 -->
 <form action="/results" method="post">
 <input name="answer" type="hidden" value="2" />
 <input type="image" src="{{ url_for('static', filename='egg.png') }}" width="50%">
-</form>-->
+</form>
 
-<!--answer #3 
+<!--answer #3 --->
 <form action="/results" method="post">
 <input name="answer" type="hidden" value="3" />
 <input type="image" src="{{ url_for('static', filename='egg.png') }}" width="50%">
 </form>
 
-</div>-->
-
+</div>
 
 
 <!--peramitres version-->
+<!-- answer #1
 
-<form action = "/results" method="post">
-<!-- answer #1-->
-<a href="{{ url_for('egg'), {answer:1} }}">
  <div class="egg">
         <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
         <div class= "text">
           {{answers[current_question][1]}}
        </div>
       </div>
-</a>
-
-<a href="{{ url_for('egg'), {answer:2} }}">
- <div class="egg">
-        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
-        <div class= "text">
-          {{answers[current_question][2]}}
-       </div>
-      </div>
-</a>
-
-<a href="{{ url_for('egg'), {answer:3} }}">
- <div class="egg">
-        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
-        <div class= "text">
-          {{answers[current_question][3]}}
-       </div>
-      </div>
-</a>
-
-</form>
-
-
-
-</div>
+</a>-->
 
 
 <!--ORIGIONAL CODE
