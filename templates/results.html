@@ -19,6 +19,8 @@
 
       <h1>= Results = </h1> 
 
+<!--test version-->
+<!--
       <div>
     <h3>Details</h3>
     {% for key in details %}
@@ -42,24 +44,29 @@
 </div>
 
 
-    </div>
-       <!-- <h2>Chicken #1</h2>
-          <img src="leghorn.png">
+   </div>-->
+
+
+
+   
+      <div>
+        <h2>Chicken #1</h2>
+          <img src="{{ url_for('static', filename='leghorn.png') }}">
           <p>Nulla dui nisi, mattis vel scelerisque ac, laoreet quis arcu. Mauris non elit nunc. Aliquam dapibus elit non purus cursus, nec placerat sem rutrum. Morbi at venenatis magna.</p>
       </div>
 
       <div>
         <h2>Chicken #2</h2>
-          <img src="red-shaver.jpeg">
+          <img src="{{ url_for('static', filename='red-shaver.jpeg') }}">
           <p>Nulla dui nisi, mattis vel scelerisque ac, laoreet quis arcu. Mauris non elit nunc. Aliquam dapibus elit non purus cursus, nec placerat sem rutrum. Morbi at venenatis magna.</p>
       </div>
 
       <div>
         <h2>Chicken #3</h2>
-          <img src="silke.jpeg">
+          <img src="{{ url_for('static', filename='silke.jpeg') }}">
           <p>Nulla dui nisi, mattis vel scelerisque ac, laoreet quis arcu. Mauris non elit nunc. Aliquam dapibus elit non purus cursus, nec placerat sem rutrum. Morbi at venenatis magna.</p>
       </div>
-    </div>-->
+    </div>
 
 
 
