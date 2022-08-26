@@ -54,7 +54,7 @@ def results():
     print(db)
 
     chickens = []
-    cur = db.execute('SELECT chicken,mass,egg,friendly,climate,backyard FROM chickens')
+    cur = db.execute('SELECT chicken,mass,egg,friendly,climate,backyard, image FROM chickens')
     for row in cur:
         chickens.append(list(row))
     db.close()
