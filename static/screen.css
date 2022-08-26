@@ -168,7 +168,7 @@ a {
 #menu li {
   list-style: none;
   color: white;
-  line-height: 90%;
+  line-height: 95%;
   width: 90%;
   padding: 0.5em;
 }
@@ -196,7 +196,7 @@ a {
 
 
 #menu ul {
-  float: left;
+  text-align: left;
 }
 
 
