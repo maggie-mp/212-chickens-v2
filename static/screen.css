@@ -223,8 +223,8 @@ a:hover {
 
   #menu div:nth-child(3) {
     border: none;
-    border-left: 3px solid #2A8;
-    border-right: 3px solid #2A8;
+    border-left: 3px solid goldenrod;
+    border-right: 3px solid goldenrod;
   }
 
 }
