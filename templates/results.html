@@ -13,11 +13,12 @@
 
 
   <!--results layout-->
-    
+
 
       <div id="menu">
 
-      <h1>= Results = </h1> 
+      <h1>= Results = </h1>
+
 
 <!--test version-->
 <!--
@@ -39,7 +40,7 @@
   <p>
     <em>You can expect your delivery to arrive in about 35 minutes. <br />Thanks for ordering from 212 Burgers!</em>
   </p>
- 
+
 
 </div>
 
@@ -48,24 +49,23 @@
 
 
 
-   
-      <div>
-        <h2>Chicken #1</h2>
-          <img src="{{ url_for('static', filename='leghorn.png') }}">
-          <p>Nulla dui nisi, mattis vel scelerisque ac, laoreet quis arcu. Mauris non elit nunc. Aliquam dapibus elit non purus cursus, nec placerat sem rutrum. Morbi at venenatis magna.</p>
-      </div>
 
-      <div>
-        <h2>Chicken #2</h2>
-          <img src="{{ url_for('static', filename='red-shaver.jpeg') }}">
-          <p>Nulla dui nisi, mattis vel scelerisque ac, laoreet quis arcu. Mauris non elit nunc. Aliquam dapibus elit non purus cursus, nec placerat sem rutrum. Morbi at venenatis magna.</p>
-      </div>
 
-      <div>
-        <h2>Chicken #3</h2>
-          <img src="{{ url_for('static', filename='silke.jpeg') }}">
-          <p>Nulla dui nisi, mattis vel scelerisque ac, laoreet quis arcu. Mauris non elit nunc. Aliquam dapibus elit non purus cursus, nec placerat sem rutrum. Morbi at venenatis magna.</p>
-      </div>
+        <h1>= best chickens for you = </h1>
+   {% for chicken in best_chickens %}
+        <div>
+           <h2>{{ chicken[0] }}</h2>
+            <li>
+              <img src ="{{chicken[6]}}">
+              <ul><span style="color: #F5C403;">Type:</span> {{chicken[1]}}</ul>
+              <ul><span style="color: #F5C403;">Friendliness:</span> {{chicken[3]}}</ul>
+              <ul><span style="color: #F5C403;">Climate Preferrance:</span> {{chicken[4]}}</ul>
+              <ul><span style="color: #F5C403;">Backyard Preferrance:</span> {{chicken[5]}}</ul>
+            </li>
+        </div>
+
+      {% endfor %}
+
     </div>
 
 
@@ -74,7 +74,7 @@
 
 
     <div id="menu">
-      <h1>= All the other Chickens = </h1> 
+      <h1>= All the other Chickens = </h1>
  {% for chicken in chickens %}
       <div>
          <h2>{{ chicken[0] }}</h2>
@@ -85,11 +85,10 @@
             <ul><span style="color: #F5C403;">Climate Preferrance:</span> {{chicken[4]}}</ul>
             <ul><span style="color: #F5C403;">Backyard Preferrance:</span> {{chicken[5]}}</ul>
           </li>
-          
+
      </div>
 
     {% endfor %}
 
     </div>
 {% endblock %}
-  

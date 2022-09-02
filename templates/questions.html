@@ -14,7 +14,7 @@
 
       <div id="menu">
 
-    
+
     <!--question-->
       <h1>Question #{{ questionss[current_question][0]}}</h1>
       <h1>{{ questionss[current_question][1]}}</h1>
@@ -29,50 +29,62 @@
 
   <!--answer #1-->
 
-  <a href="{{ url_for('egg') }}">
-      <div class="egg">
-        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+      <div class="egg">.
+        <form id="egg_question" method="POST">
+        <button type="submit" name="response" value="1" id="entry_input" style="border:none">
+          <img src="{{ url_for('static', filename='egg.png') }}" width="50%"/>
+        </button>
         <div class= "text">
+
           {{answers[current_question][1]}}
           <!--
-          {% for answer in answers %} 
+          {% for answer in answers %}
           {{ answer[0][0] }}
           {% endfor %}
-        -->
+          -->
         </div>
+      </form>
       </div>
-      </a>
 
 
-  <a href="{{ url_for('egg') }}">
-      <div class="egg">
-        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+
+      <div class="egg">.
+        <form id="egg_question" method="POST">
+        <button type="submit" name="response" value="2" id="entry_input" style="border:none">
+          <img src="{{ url_for('static', filename='egg.png') }}" width="50%"/>
+        </button>
         <div class= "text">
+
           {{answers[current_question][2]}}
           <!--
-          {% for answer in answers %} 
+          {% for answer in answers %}
           {{ answer[0][0] }}
           {% endfor %}
-        -->
+          -->
         </div>
+      </form>
       </div>
-      </a>
 
 
-  <!--answer #3-->
-  <a href="{{ url_for('egg') }}">
-      <div class="egg">
-        <img src="{{ url_for('static', filename='egg.png') }}" width="50%" />
+
+
+      <div class="egg">.
+        <form id="egg_question" method="POST">
+        <button type="submit" name="response" value="3" id="entry_input" style="border:none">
+          <img src="{{ url_for('static', filename='egg.png') }}" width="50%"/>
+        </button>
         <div class= "text">
+
           {{answers[current_question][3]}}
           <!--
-          {% for answer in answers %} 
+          {% for answer in answers %}
           {{ answer[0][0] }}
           {% endfor %}
-        -->
+          -->
         </div>
+      </form>
       </div>
-      </a>
+
 
          <!--<div>
         <h2>Burgers</h2>
