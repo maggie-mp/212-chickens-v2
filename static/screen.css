@@ -118,7 +118,7 @@ a {
 }
 
 .text {
-   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -178,10 +178,10 @@ a {
   margin: 0 1em;
 }
 
-#menu div:nth-child(3) {
+/*#menu div:nth-child(3) {
   border-bottom: 3px solid goldenrod;
   border-top: 3px solid goldenrod;
-}
+}*/
 
 #menu h1 {
   grid-column: span 3;
@@ -221,10 +221,10 @@ a:hover {
     margin: 0;
   }
 
-  #menu div:nth-child(3) {
+ /* #menu div:nth-child(3) {
     border: none;
     border-left: 3px solid goldenrod;
     border-right: 3px solid goldenrod;
-  }
+  }*/
 
 }
